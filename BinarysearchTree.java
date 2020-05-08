@@ -78,6 +78,7 @@ class Tree{
 			display(n.rchild);
 		}
 	}
+	//Recursive Seacrch
 	public Node Rsearch(Node n,int key){
 		if(n!=null){
 			if(key==n.data){
@@ -89,6 +90,7 @@ class Tree{
 			}
 		}return null;
 	}
+	//Iterative Search
 	public Node Isearch(Node n,int key){
 		while(n!=null){
 			if(n.data==key)
@@ -99,6 +101,7 @@ class Tree{
 				n=n.lchild;
 		}return null;
 	}
+	//Insert Funtion
 	public void insert(int key){
 		Node n=root;
 		Node r=null;
@@ -117,6 +120,7 @@ class Tree{
 		else
 			r.rchild=node;
 	}
+	//Recursive Insert
 	public Node Rinsert(Node n,int key){
 		Node node=null;
 		if (n==null){
